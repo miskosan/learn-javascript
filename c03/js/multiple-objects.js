@@ -1,3 +1,4 @@
+// Create the template for objects that are hotels
 function Hotel(name, rooms, booked) {
   this.name = name;
   this.rooms = rooms;
@@ -6,9 +7,12 @@ function Hotel(name, rooms, booked) {
     return this.rooms - this.booked;
   };
 }
+
+// Create two hotel objects
 var quayHotel = new Hotel("Quay", 40, 25);
 var parkHotel = new Hotel("Park", 120, 77);
 
+// Update the HTML for the page
 var details1 = quayHotel.name + " rooms: ";
 details1 += quayHotel.checkAvailability();
 var elHotel1 = document.getElementById("hotel1");
